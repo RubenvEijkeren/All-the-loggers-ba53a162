@@ -41,7 +41,9 @@ class MyLogger
 }
 try {
     $logger = new MyLogger('Admin');
-    $logger->error("dit is een error");
+    $logger->info("dit is een log door een Admin");
+    $logger2 = new MyLogger('User');
+    $logger2->info("dit is een log door een User");
 }
 catch(Exception $e){
     echo "Error: " . $e->getMessage();
