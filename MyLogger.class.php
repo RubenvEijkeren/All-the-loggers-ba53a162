@@ -1,4 +1,4 @@
-<?php  
+<?php
 /**
  * 
  */
@@ -44,11 +44,9 @@ try {
     $logger->info("dit is een log door een Admin");
     $logger2 = new MyLogger('User');
     $logger2->info("dit is een log door een User");
-}
-catch(Exception $e){
+} catch (Exception $e) {
     echo "Error: " . $e->getMessage();
-}
-catch(ArgumentCountError $e){
+} catch (ArgumentCountError $e) {
     echo "Error: " . $e->getMessage();
 }
 ?>
